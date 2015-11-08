@@ -1,0 +1,17 @@
+body {
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.intro {
+  height: 100vh;
+  background-color: #fff;
+  padding: 40px;
+}
+.intro__title {
+  font-family: Caslon, serif;
+  text-align: center;
+  font-size: 70px;
+  margin: 0;
+}
