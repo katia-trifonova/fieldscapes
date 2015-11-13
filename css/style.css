@@ -16,17 +16,22 @@
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 2em;
-  padding-bottom: 8em;
+  padding-bottom: 2em;
   text-align: center;
 }
 body {
-  color: #000;
+  color: #444;
   background-color: #fff;
   margin: 0;
   padding: 0;
   font-family: Helvetica sans-serif;
   font-size: 18px;
+}
+.icon {
+  padding-top: 3em;
+  padding-bottom: 2em;
+  font-size: 48px;
+  text-align: center;
 }
 .intro {
   height: 100vh;
@@ -41,10 +46,6 @@ body {
 }
 .title_intro {
   padding-top: 20vh;
-}
-.title_track {
-  padding-top: 3em;
-  padding-bottom: 1em;
 }
 .track {
   height: 100vh;
