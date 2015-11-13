@@ -6,12 +6,15 @@ body {
 }
 .intro {
   height: 100vh;
-  background-color: #fff;
-  padding: 40px;
 }
 .intro__title {
   font-family: Caslon, serif;
   text-align: center;
-  font-size: 70px;
+  font-size: 100px;
+  font-weight: normal;
   margin: 0;
+  padding-top: 20vh;
+}
+.track {
+  height: 100vh;
 }
