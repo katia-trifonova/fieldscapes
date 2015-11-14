@@ -13,11 +13,18 @@
   text-align: center;
 }
 .audio {
+  height: 20vh;
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 2em;
+  padding-top: 2em;
   text-align: center;
+}
+audio {
+  width: 70%;
+}
+* {
+  box-sizing: border-box;
 }
 body {
   color: #444;
@@ -47,6 +54,39 @@ body {
 .title_intro {
   padding-top: 20vh;
 }
+.title_track {
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+}
 .track {
-  height: 100vh;
+  height: 80vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.garden {
+  background-image: url("../img/garden.jpg");
+}
+.kitchen {
+  background-image: url("../img/kitchen.jpg");
+}
+.chicken {
+  background-image: url("../img/chicken.jpg");
+}
+.goats {
+  background-image: url("../img/goats.jpg");
+}
+.birds {
+  background-image: url("../img/yellow.jpg");
+}
+.rain {
+  background-image: url("../img/rainy-field.jpg");
+}
+.village {
+  background-image: url("../img/village.jpg");
+}
+.dog-weed {
+  background-image: url("../img/dog-weed.jpg");
 }
