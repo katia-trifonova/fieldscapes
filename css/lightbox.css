@@ -1,6 +1,6 @@
 /* Preload images */
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  content: url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
   display: none;
 }
 
@@ -173,8 +173,9 @@ body:after {
 .lb-data .lb-close {
   display: block;
   float: right;
-  width: 30px;
-  height: 30px;
+  /*width: 30px;*/
+  /*height: 30px;*/
+  height: 0;
   background: url(../img/close.png) top right no-repeat;
   text-align: right;
   outline: none;
