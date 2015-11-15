@@ -6,84 +6,115 @@
 	<title>Fieldscapes</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font.css">
+	<link href="css/lightbox.css" rel="stylesheet">
+
 </head>
 <body>
-	<section class="intro parallax-window"  data-parallax="scroll" data-image-src="img/intro.jpg">
+	<div class="intro parallax-window"  data-parallax="scroll" data-image-src="pic/intro.jpg">
 		<h1 class="title title_intro">&#64257;eldscapes</h1>
-	</section>
-	<section class="about">
-		<h1 class="title title_about">this is the place</h1>
+	</div>
+	<div class="about">
+		<h2 class="title title_about">this is the place</h1>
 		<p class="about__txt">this is the place this is the place this is the place this is the placethis is the placethis is the place this is the placethis is the place this is the place this is the placethis is the placethis is the place this is the placethis is the placev this is the placethis is the place this is the place this is the place</p>
-	</section>
+	</div>
 
 
-	<section class="track village">
-	</section>
-	<section class="audio">
+	<div class="pic village"></div>
+	<div class="audio">
 		<!-- <h3 class="title_track">Rainy day, cock coo-coo</h3> -->
 		<audio controls>
 			<source src="media/01-village.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
-	</section>
+	</div>
 
-	<section class="track dog-weed">
-	</section>
-	<section class="audio">
+	<div class="pic dog-weed"></div>
+	<div class="audio">
 		<audio controls>
 			<source src="media/02-dog-weed.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
-	</section>
+	</div>
 
-	<section class="track rain">
-	</section>
-	<section class="audio">
+	<div class="pic rain"></div>
+	<div class="audio">
 		<audio controls>
 			<source src="media/03-rain.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
-	</section>
+	</div>
 
-	<section class="track chicken">
-	</section>
-	<section class="audio">
+	<div class="pic chicken"></div>
+	<div class="audio">
 		<audio controls>
 			<source src="media/04-chicken.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
-	</section>
+	</div>
 
-	<section class="track kitchen">
-	</section>
-	<section class="audio">
+	<div class="pic kitchen"></div>
+	<div class="audio">
 		<audio controls>
 			<source src="media/05-kitchen.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
-	</section>
+	</div>
 
-	<section class="track goats">
-	</section>
-	<section class="audio">
+	<div class="pic birds"></div>
+	<div class="audio">
 		<audio controls>
-			<source src="media/06-goats.mp3" type="audio/mpeg">
+			<source src="media/06-birds.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
-	</section>
+	</div>
 
-	<section class="track birds">
-	</section>
-	<section class="audio">
-		<audio controls>
-			<source src="media/07-birds.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-		</audio>
-	</section>
+	<div class="gallery">
 
-<script type="text/javascript" src="js/jquery-2.1.4.min.js">
-</script>
-<script type="text/javascript" src="js/parallax.min.js">
+		<h2 class="title title_gallery">visual</h2>
+
+		<a class="gallery__link gallery__link_tree" href="pic/tree.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_leaf" href="pic/leaf.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_garden" href="pic/garden.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_chicken" href="pic/chicken.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_alder" href="pic/alder.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_dog-eat" href="pic/dog-eat.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_garden02" href="pic/garden02.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_dog-weed" href="pic/dog-weed.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_fog" href="pic/fog.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_kitchen" href="pic/kitchen.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_land" href="pic/land.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_village" href="pic/village.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_rainy-field" href="pic/rainy-field.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_sunny" href="pic/sunny.jpg" data-lightbox="pic"></a>
+
+		<a class="gallery__link gallery__link_yellow" href="pic/yellow.jpg" data-lightbox="pic"></a>
+
+
+	</div>
+
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/parallax.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
 </script>
 </body>
 </html>

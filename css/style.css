@@ -34,6 +34,70 @@ body {
   font-family: Helvetica sans-serif;
   font-size: 18px;
 }
+.gallery {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20vh;
+}
+.gallery__link {
+  display: block;
+  float: left;
+  margin: 0;
+  width: 33.333333%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.gallery__link_tree {
+  background-image: url("../pic/thumb/tree.jpg");
+}
+.gallery__link_leaf {
+  background-image: url("../pic/thumb/leaf.jpg");
+}
+.gallery__link_garden {
+  background-image: url("../pic/thumb/garden.jpg");
+}
+.gallery__link_chicken {
+  background-image: url("../pic/thumb/chicken.jpg");
+}
+.gallery__link_alder {
+  background-image: url("../pic/thumb/alder.jpg");
+}
+.gallery__link_dog-eat {
+  background-image: url("../pic/thumb/dog-eat.jpg");
+}
+.gallery__link_garden02 {
+  background-image: url("../pic/thumb/garden02.jpg");
+}
+.gallery__link_dog-weed {
+  background-image: url("../pic/thumb/dog-weed.jpg");
+}
+.gallery__link_fog {
+  background-image: url("../pic/thumb/fog.jpg");
+}
+.gallery__link_tree {
+  background-image: url("../pic/thumb/tree.jpg");
+}
+.gallery__link_kitchen {
+  background-image: url("../pic/thumb/kitchen.jpg");
+}
+.gallery__link_land {
+  background-image: url("../pic/thumb/land.jpg");
+}
+.gallery__link_village {
+  background-image: url("../pic/thumb/village.jpg");
+}
+.gallery__link_rainy-field {
+  background-image: url("../pic/thumb/rainy-field.jpg");
+}
+.gallery__link_sunny {
+  background-image: url("../pic/thumb/sunny.jpg");
+}
+.gallery__link_yellow {
+  background-image: url("../pic/thumb/yellow.jpg");
+}
 .icon {
   padding-top: 3em;
   padding-bottom: 2em;
@@ -42,6 +106,31 @@ body {
 }
 .intro {
   height: 100vh;
+}
+.pic {
+  height: 80vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.kitchen {
+  background-image: url("../pic/kitchen.jpg");
+}
+.chicken {
+  background-image: url("../pic/chicks.jpg");
+}
+.birds {
+  background-image: url("../pic/yellow.jpg");
+}
+.rain {
+  background-image: url("../pic/rainy-field.jpg");
+}
+.village {
+  background-image: url("../pic/village.jpg");
+}
+.dog-weed {
+  background-image: url("../pic/dog-weed.jpg");
 }
 .title {
   font-family: 'henri_didot', serif;
@@ -59,34 +148,7 @@ body {
   font-weight: normal;
   margin-top: 0;
 }
-.track {
-  height: 80vh;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
-.garden {
-  background-image: url("../img/garden.jpg");
-}
-.kitchen {
-  background-image: url("../img/kitchen.jpg");
-}
-.chicken {
-  background-image: url("../img/chicken.jpg");
-}
-.goats {
-  background-image: url("../img/goats.jpg");
-}
-.birds {
-  background-image: url("../img/yellow.jpg");
-}
-.rain {
-  background-image: url("../img/rainy-field.jpg");
-}
-.village {
-  background-image: url("../img/village.jpg");
-}
-.dog-weed {
-  background-image: url("../img/dog-weed.jpg");
+.title_gallery {
+  padding-top: 20vh;
+  padding-bottom: 1em;
 }
