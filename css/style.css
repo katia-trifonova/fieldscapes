@@ -39,6 +39,9 @@ body {
   display: table;
   clear: both;
 }
+.border {
+  height: 300px;
+}
 .footer {
   background-color: #eee;
   padding-top: 10vh;
@@ -105,8 +108,8 @@ body {
 .gallery__link_village {
   background-image: url("../pic/thumb/village.jpg");
 }
-.gallery__link_rainy-field {
-  background-image: url("../pic/thumb/rainy-field.jpg");
+.gallery__link_weed {
+  background-image: url("../pic/thumb/weed.jpg");
 }
 .gallery__link_sunny {
   background-image: url("../pic/thumb/sunny.jpg");
