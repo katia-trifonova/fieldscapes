@@ -40,10 +40,42 @@ body {
   clear: both;
 }
 .border {
-  height: 300px;
+  background-color: #eee;
+  padding-top: 3em;
+}
+.border__chick {
+  height: 80px;
+  background-color: #eee;
+  background-image: url("../img/chick-walk.gif"), url("../img/chick-walk-reverse.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: move 60s linear infinite;
+  animation: move 60s linear infinite;
+}
+@-webkit-keyframes move {
+  0% {
+    background-position: -10% 8px, 110% 8px;
+  }
+  50% {
+    background-position: 110% 8px, 110% 8px;
+  }
+  100% {
+    background-position: 110% 8px, -10% 8px;
+  }
+}
+@keyframes move {
+  0% {
+    background-position: -10% 8px, 110% 8px;
+  }
+  50% {
+    background-position: 110% 8px, 110% 8px;
+  }
+  100% {
+    background-position: 110% 8px, -10% 8px;
+  }
 }
 .footer {
-  background-color: #eee;
+  background-color: #fff;
   padding-top: 10vh;
   padding-bottom: 10vh;
   text-align: center;
@@ -53,11 +85,15 @@ body {
   color: #008000;
   text-decoration: none;
 }
+.gallery-wrapper {
+  background-color: #eee;
+}
 .gallery {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 20vh;
+  padding-top: 6em;
 }
 .gallery__link {
   display: block;
@@ -168,6 +204,5 @@ body {
   margin-top: 0;
 }
 .title_gallery {
-  padding-top: 20vh;
   padding-bottom: 1em;
 }
