@@ -54,6 +54,7 @@ body:after {
 
 .lb-container {
   /*padding: 4px;*/
+  position: relative;
 }
 
 .lb-loader {
@@ -144,6 +145,7 @@ body:after {
 }
 
 .lb-data {
+  position: relative; /*MY ADDITION!!!*/
   padding: 0 4px;
   color: #ccc;
 }
@@ -170,22 +172,32 @@ body:after {
   color: #999999;
 }
 
-.lb-data .lb-close {
+.lb-close {
+  position: absolute; /*MY ADDITION!!!*/
+  content: "";  /*MY ADDITION!!!*/
   display: block;
-  float: right;
-  /*width: 30px;*/
-  /*height: 30px;*/
-  height: 0;
+  z-index: 1000;
+  top: 5px;
+  right: 5px;
+  /*float: right;*/
+  width: 30px;
+  height: 30px;
   background: url(../img/close.png) top right no-repeat;
   text-align: right;
   outline: none;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   transition: opacity 0.2s;
 }
 
-.lb-data .lb-close:hover {
+.lb-container:hover .lb-close {  /*MY ADDITION!!*/
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+    cursor: pointer;
+}
+
+/*.lb-close:hover {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-}
+}*/

@@ -5,12 +5,30 @@
   padding-top: 6em;
   padding-bottom: 8em;
 }
+@media screen and (max-width: 500px) {
+  .about {
+    padding-top: 3em;
+    padding-bottom: 4em;
+  }
+}
 .about__txt {
+  max-width: 750px;
   font-family: Helvetica, sans-serif;
   color: #444;
+  padding-right: 2em;
+  padding-left: 2em;
   line-height: 1.5;
   font-size: 18px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 500px) {
+  .about__txt {
+    font-size: 14px;
+  }
 }
 .audio {
   height: 20vh;
@@ -18,7 +36,13 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 2em;
+  padding-bottom: 0.5em;
   text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .audio {
+    padding-top: 1em;
+  }
 }
 audio {
   width: 70%;
@@ -33,6 +57,7 @@ body {
   padding: 0;
   font-family: Helvetica, sans-serif;
   font-size: 18px;
+  min-width: 340px;
 }
 .clearfix::after {
   content: "";
@@ -42,6 +67,11 @@ body {
 .border {
   background-color: #eee;
   padding-top: 3em;
+}
+@media screen and (max-width: 800px) {
+  .border {
+    display: none;
+  }
 }
 .border__chick {
   height: 80px;
@@ -54,24 +84,24 @@ body {
 }
 @-webkit-keyframes move {
   0% {
-    background-position: -10% 8px, 110% 8px;
+    background-position: -12% 8px, 112% 8px;
   }
   50% {
-    background-position: 110% 8px, 110% 8px;
+    background-position: 112% 8px, 112% 8px;
   }
   100% {
-    background-position: 110% 8px, -10% 8px;
+    background-position: 112% 8px, -12% 8px;
   }
 }
 @keyframes move {
   0% {
-    background-position: -10% 8px, 110% 8px;
+    background-position: -12% 8px, 112% 8px;
   }
   50% {
-    background-position: 110% 8px, 110% 8px;
+    background-position: 112% 8px, 112% 8px;
   }
   100% {
-    background-position: 110% 8px, -10% 8px;
+    background-position: 112% 8px, -12% 8px;
   }
 }
 .footer {
@@ -92,8 +122,24 @@ body {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 20vh;
+  padding-bottom: 6em;
   padding-top: 6em;
+}
+@media screen and (max-width: 800px) {
+  .gallery {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .gallery {
+    padding-top: 4em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gallery {
+    padding-bottom: 0;
+    padding-top: 3em;
+  }
 }
 .gallery__link {
   display: block;
@@ -104,6 +150,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (max-width: 700px) {
+  .gallery__link {
+    width: 100%;
+    height: 400px;
+    pointer-events: none;
+  }
 }
 .gallery__link_tree {
   background-image: url("../pic/thumb/tree.jpg");
@@ -141,8 +194,8 @@ body {
 .gallery__link_land {
   background-image: url("../pic/thumb/land.jpg");
 }
-.gallery__link_village {
-  background-image: url("../pic/thumb/village.jpg");
+.gallery__link_rainy-field {
+  background-image: url("../pic/thumb/rainy-field.jpg");
 }
 .gallery__link_weed {
   background-image: url("../pic/thumb/weed.jpg");
@@ -152,6 +205,53 @@ body {
 }
 .gallery__link_yellow {
   background-image: url("../pic/thumb/yellow.jpg");
+}
+@media screen and (max-width: 700px) {
+  .gallery__link_tree {
+    background-image: url("../pic/tree.jpg");
+  }
+  .gallery__link_leaf {
+    background-image: url("../pic/leaf.jpg");
+  }
+  .gallery__link_garden {
+    background-image: url("../pic/garden.jpg");
+  }
+  .gallery__link_chicken {
+    display: none;
+  }
+  .gallery__link_alder {
+    background-image: url("../pic/alder.jpg");
+  }
+  .gallery__link_dog-eat {
+    background-image: url("../pic/dog-eat.jpg");
+  }
+  .gallery__link_garden02 {
+    background-image: url("../pic/garden02.jpg");
+  }
+  .gallery__link_dog-weed {
+    display: none;
+  }
+  .gallery__link_fog {
+    background-image: url("../pic/fog.jpg");
+  }
+  .gallery__link_kitchen {
+    display: none;
+  }
+  .gallery__link_land {
+    background-image: url("../pic/land.jpg");
+  }
+  .gallery__link_rainy-field {
+    display: none;
+  }
+  .gallery__link_weed {
+    background-image: url("../pic/weed.jpg");
+  }
+  .gallery__link_sunny {
+    background-image: url("../pic/sunny.jpg");
+  }
+  .gallery__link_yellow {
+    display: none;
+  }
 }
 .icon {
   padding-top: 3em;
@@ -198,6 +298,9 @@ body {
 .title_intro {
   padding-top: 20vh;
 }
+.title_about {
+  padding-bottom: 24px;
+}
 .title_track {
   font-family: Helvetica, sans-serif;
   font-weight: normal;
@@ -205,4 +308,15 @@ body {
 }
 .title_gallery {
   padding-bottom: 1em;
+}
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 48px;
+  }
+  .title_about {
+    padding-bottom: 14px;
+  }
+  .title_gallery {
+    padding-bottom: 0.5em;
+  }
 }
