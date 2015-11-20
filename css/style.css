@@ -78,51 +78,38 @@ body {
   background-color: #eee;
   background-image: url("../img/chick-walk.gif"), url("../img/chick-walk-reverse.gif");
   background-size: contain;
+  background-position-y: 8px;
+  background-position-x: -100px;
   background-repeat: no-repeat;
-  animation: move 60s linear infinite;
-}
-@-moz-keyframes move {
-  0% {
-    background-position: -12% 8px, 112% 8px;
-  }
-  50% {
-    background-position: 112% 8px, 112% 8px;
-  }
-  100% {
-    background-position: 112% 8px, -12% 8px;
-  }
+  -webkit-animation-name: move;
+  animation-name: move;
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 @-webkit-keyframes move {
   0% {
-    background-position: -12% 8px, 112% 8px;
+    background-position-x: -12%, 112%;
   }
   50% {
-    background-position: 112% 8px, 112% 8px;
+    background-position-x: 112%, 112%;
   }
   100% {
-    background-position: 112% 8px, -12% 8px;
-  }
-}
-@-o-keyframes move {
-  0% {
-    background-position: -12% 8px, 112% 8px;
-  }
-  50% {
-    background-position: 112% 8px, 112% 8px;
-  }
-  100% {
-    background-position: 112% 8px, -12% 8px;
+    background-position-x: 112%, -12%;
   }
 }
 @keyframes move {
   0% {
-    background-position: -12% 8px, 112% 8px;
+    background-position-x: -12%, 112%;
   }
   50% {
-    background-position: 112% 8px, 112% 8px;
+    background-position-x: 112%, 112%;
   }
   100% {
-    background-position: 112% 8px, -12% 8px;
+    background-position-x: 112%, -12%;
   }
 }
 .footer {
@@ -181,7 +168,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .gallery__link {
-    height: 500px;
+    height: 300px;
   }
 }
 .gallery__link_tree {
@@ -324,7 +311,7 @@ body {
   background-image: url("../pic/dog-weed.jpg");
 }
 .title {
-  font-family: 'henri_didot', serif;
+  font-family: 'bentham', serif;
   text-align: center;
   font-size: 78px;
   font-weight: normal;
@@ -333,6 +320,7 @@ body {
 }
 .title_intro {
   padding-top: 20vh;
+  letter-spacing: 0.02em;
 }
 .title_about {
   padding-bottom: 24px;
