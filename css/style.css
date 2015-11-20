@@ -36,12 +36,12 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 2em;
-  padding-bottom: 0.5em;
+  padding-bottom: 3em;
   text-align: center;
 }
 @media screen and (max-width: 700px) {
   .audio {
-    padding-top: 1em;
+    height: auto;
   }
 }
 audio {
@@ -79,10 +79,31 @@ body {
   background-image: url("../img/chick-walk.gif"), url("../img/chick-walk-reverse.gif");
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: move 60s linear infinite;
   animation: move 60s linear infinite;
 }
+@-moz-keyframes move {
+  0% {
+    background-position: -12% 8px, 112% 8px;
+  }
+  50% {
+    background-position: 112% 8px, 112% 8px;
+  }
+  100% {
+    background-position: 112% 8px, -12% 8px;
+  }
+}
 @-webkit-keyframes move {
+  0% {
+    background-position: -12% 8px, 112% 8px;
+  }
+  50% {
+    background-position: 112% 8px, 112% 8px;
+  }
+  100% {
+    background-position: 112% 8px, -12% 8px;
+  }
+}
+@-o-keyframes move {
   0% {
     background-position: -12% 8px, 112% 8px;
   }
@@ -154,8 +175,13 @@ body {
 @media screen and (max-width: 700px) {
   .gallery__link {
     width: 100%;
-    height: 400px;
+    height: 500px;
     pointer-events: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gallery__link {
+    height: 500px;
   }
 }
 .gallery__link_tree {
@@ -269,6 +295,16 @@ body {
   background-size: cover;
   background-position: 50%;
 }
+@media screen and (max-width: 700px) {
+  .pic {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pic {
+    height: 300px;
+  }
+}
 .kitchen {
   background-image: url("../pic/kitchen.jpg");
 }
@@ -301,11 +337,6 @@ body {
 .title_about {
   padding-bottom: 24px;
 }
-.title_track {
-  font-family: Helvetica, sans-serif;
-  font-weight: normal;
-  margin-top: 0;
-}
 .title_gallery {
   padding-bottom: 1em;
 }
@@ -315,8 +346,5 @@ body {
   }
   .title_about {
     padding-bottom: 14px;
-  }
-  .title_gallery {
-    padding-bottom: 0.5em;
   }
 }
