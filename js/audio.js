@@ -7,8 +7,15 @@
 // }
 
 $('audio').bind('play', function() {
-            activated = this;
-            $('audio').each(function() {
-                if(this != activated) this.pause();
-            });
+    activated = this;
+    $('audio').each(function() {
+        if(this != activated) this.pause();
     });
+});
+
+
+$('audio').bind('ended', function() {
+	activated = this;
+    index = $('audio').index(activated);
+	$('audio').eq(index+1).get(0).play();
+})
