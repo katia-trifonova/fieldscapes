@@ -1,11 +1,4 @@
-// var audio = document.querySelectorAll("audio");
-//
-// for (var i = 0; i < audio.length; i++) {
-// 	if (audio[i].onplay) {
-// 		$("audio").not($(this)).get(0).pause();
-// 	}
-// }
-
+//disable simultaneous play
 $('audio').bind('play', function() {
     activated = this;
     $('audio').each(function() {
@@ -13,7 +6,7 @@ $('audio').bind('play', function() {
     });
 });
 
-
+//play tracks one by one
 $('audio').bind('ended', function() {
 	activated = this;
     index = $('audio').index(activated);
