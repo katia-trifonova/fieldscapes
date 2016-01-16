@@ -223,11 +223,10 @@
 	(function(){
 
 		var preloader = document.createElement('div');
-		var spinner = preloader.querySelector('.spinner');
-
 		preloader.classList.add('preloader');
 		preloader.innerHTML = '<div class="spinner"><div class="dot dot1"></div><div class="dot dot2"></div></div>';
 		document.body.appendChild(preloader);
+		var spinner = preloader.querySelector('.spinner');
 
 		window.onload = function(){
 					spinner.style.opacity = '0';
