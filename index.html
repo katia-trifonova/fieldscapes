@@ -27,7 +27,7 @@
 			display: none;
 		}
 
-		.sk-chasing-dots {
+		.spinner {
 			position: absolute;
 	    left: 50%;
 	    top: 50%;
@@ -43,7 +43,7 @@
 		          animation: sk-chasingDotsRotate 2s infinite linear; 
 
 		  }
-		  .sk-chasing-dots .sk-child {
+		  .spinner .dot {
 		    width: 60%;
 		    height: 60%;
 		    display: inline-block;
@@ -54,7 +54,7 @@
 		    -webkit-animation: sk-chasingDotsBounce 2s infinite ease-in-out;
 		            animation: sk-chasingDotsBounce 2s infinite ease-in-out; 
 		  }
-		  .sk-chasing-dots .sk-dot2 {
+		  .spinner .dot2 {
 		    top: auto;
 		    bottom: 0;
 		    -webkit-animation-delay: -1s;
@@ -221,21 +221,13 @@
 <!--preloader script-->
 <script>
 	(function(){
+
 		var preloader = document.createElement('div');
-		var spinner = preloader.cloneNode();
-		var spinnerChild = preloader.cloneNode();
-		var dot1 = preloader.cloneNode();
-		var dot2 = preloader.cloneNode();
+		var spinner = preloader.querySelector('.spinner');
 
 		preloader.classList.add('preloader');
-		spinner.classList.add('sk-chasing-dots');
-		dot1.classList.add('sk-child', 'sk-dot1');
-		dot2.classList.add('sk-child', 'sk-dot2');
-
-		preloader.appendChild(spinner);
+		preloader.innerHTML = '<div class="spinner"><div class="dot dot1"></div><div class="dot dot2"></div></div>';
 		document.body.appendChild(preloader);
-		spinner.appendChild(dot1);
-		spinner.appendChild(dot2);
 
 		window.onload = function(){
 					spinner.style.opacity = '0';
