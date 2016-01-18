@@ -11,6 +11,19 @@
 
 	<!--preloader style-->
 	<style>
+
+		.loading {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 10em;
+			height: 1em;
+			margin-top: -3.5em;
+			margin-left: -5.5em;
+			text-align: center;
+			font-size: 24px;
+			/*background-color: beige;*/
+		}
 		.preloader {
 	    position: fixed;
 	    left: 0;
@@ -224,7 +237,7 @@
 
 		var preloader = document.createElement('div');
 		preloader.classList.add('preloader');
-		preloader.innerHTML = '<div class="spinner"><div class="dot dot1"></div><div class="dot dot2"></div></div>';
+		preloader.innerHTML = '<p class="loading">loading...</p><div class="spinner"><div class="dot dot1"></div><div class="dot dot2"></div></div>';
 		document.body.appendChild(preloader);
 		var spinner = preloader.querySelector('.spinner');
 
