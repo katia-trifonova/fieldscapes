@@ -240,9 +240,12 @@
 		preloader.innerHTML = '<p class="loading">loading...</p><div class="spinner"><div class="dot dot1"></div><div class="dot dot2"></div></div>';
 		document.body.appendChild(preloader);
 		var spinner = preloader.querySelector('.spinner');
+		var loading = preloader.querySelector('.loading');
 
 		window.onload = function(){
 					spinner.style.opacity = '0';
+					loading.style.opacity = '0';
+
 					setTimeout(preloaderRemove, 1000);
 					setTimeout(preloaderHide, 2000);
 
