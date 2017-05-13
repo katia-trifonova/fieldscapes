@@ -64,54 +64,101 @@ body {
   display: table;
   clear: both;
 }
+
 .border {
+  overflow-x: hidden;
   background-color: #eee;
   padding-top: 3em;
+  position: relative;
+  height: 80px;
 }
+
+.border__chick {
+  height: 80px;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
 @media screen and (max-width: 800px) {
   .border {
     display: none;
   }
 }
-.border__chick {
+
+.border__chick01 {
+  transform: translateX(-10%);
+  animation: move01 60s linear infinite;
+}
+.border__chick02 {
+  transform: translateX(100%);
+  animation: move02 60s linear infinite;
+}
+
+
+.border__chick-inner {
   height: 80px;
-  background-color: #eee;
-  background-image: url("../img/chick-walk.gif"), url("../img/chick-walk-reverse.gif");
-  background-size: contain;
+  width: 80px;
   background-position-y: 8px;
-  background-position-x: -100px;
   background-repeat: no-repeat;
-  -webkit-animation-name: move;
-  animation-name: move;
-  -webkit-animation-duration: 60s;
-  animation-duration: 60s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
+  background-size: 560px 80px;
 }
-@-webkit-keyframes move {
+
+
+
+.border__chick-inner01 {
+  background-image: url("../img/chick-sprite.svg");
+  animation: goChicky .7s steps(6) infinite;
+}
+
+.border__chick-inner02 {
+  background-image: url("../img/chick-sprite-back.svg");
+  animation: goChicky .7s steps(6) infinite;
+}
+
+
+@keyframes goChicky {
   0% {
-    background-position-x: -12%, 112%;
+    background-position-x: 0;
   }
-  50% {
-    background-position-x: 112%, 112%;
-  }
+
   100% {
-    background-position-x: 112%, -12%;
+    background-position-x: 100%;
   }
 }
-@keyframes move {
+
+
+@keyframes move01 {
   0% {
-    background-position-x: -12%, 112%;
+    transform: translateX(-10%);
   }
+
   50% {
-    background-position-x: 112%, 112%;
+    transform: translateX(105%);
   }
+
   100% {
-    background-position-x: 112%, -12%;
+    transform: translateX(105%);
   }
 }
+
+@keyframes move02 {
+  0% {
+    transform: translateX(105%);
+  }
+
+  50% {
+    transform: translateX(105%);
+  }
+
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+
 .footer {
   background-color: #fff;
   padding-top: 10vh;
